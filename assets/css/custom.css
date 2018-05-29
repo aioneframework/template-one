@@ -1,0 +1,132 @@
+         .bg-img{
+         background-image: url('assets/images/bg-pattern.png');
+         }
+         .owl-nav{
+         display: none;
+         }
+         .box-shadow-pricing:hover{
+         box-shadow: 0 1px 25px rgba(0, 0, 0, 0.1);
+         }
+         ::placeholder {
+         padding-left:15px;
+         }
+         .hover-border:hover{
+         border:1px solid white;
+         }
+         .aione-scroll-to-top{
+         display: block;
+         position: fixed;
+         right: 10px;
+         bottom: 0;
+         z-index: 999;
+         background-color: #503D9E;
+         color: #ffffff;
+         line-height: 30px;
+         font-size: 30px;
+         width: 45px;
+         text-align: center;
+         border-radius: 6px 6px 0 0;
+         }
+         .btn-hover:hover{
+         box-shadow: 0px 5px 15px #0055dc;
+         }
+         .gallery-item{
+         float: none;
+         }
+      
+     /*nav resposive*/
+     
+         .aione-menu{
+         margin: 0 auto;
+         padding:0px;
+         width: 80%;
+         text-align: right;
+         }
+         .aione-menu .aione-nav-item{
+         display: inline-block;
+         padding: 10px;
+         list-style: none;
+         }
+         .aione-menu .aione-nav-item a{
+         color: #37474F;
+         text-decoration: none;
+         }
+         .aione-menu .aione-nav-item a:hover{
+         	color: #503D9E;
+         }
+         .toggle{
+         text-align: right;
+         width: 100%;
+         padding:10px 20px;
+         box-sizing: border-box;
+         background-color: #fff;
+         display: none;
+         }
+         .stuck-nav{
+         background-color: white;
+         position: fixed;
+         width: 100%;
+         top: 0px;
+         z-index: 99;
+         }
+         .hover-read-btn:hover{
+         background-color: #503D9E;
+         border:1px solid #503D9E;
+         color:white;
+         }
+         @media (max-width: 768px) {
+         .toggle{
+         display: block;
+         cursor: pointer;
+         }
+         .aione-menu{
+         display: none;
+         width: 100%;
+         }
+         .active{
+         display: block;
+         }
+         .aione-menu .aione-nav-item{
+         display: block;
+         text-align: center;
+         }
+         .aione-menu .aione-nav-item:hover{
+         background-color: #5A48C0;
+         color: white;
+         }
+         .aione-menu .aione-nav-item:hover a{
+         color: white;
+         }
+         .logo{
+         margin-top: 10px;
+         }
+         .small-size{
+         font-size: 40px;
+         line-height: 50px;
+         text-align: center;
+         }
+         .img-size{
+         display: none;
+         }
+         .small-font{
+         font-size: 15px;
+         line-height: 25px;
+         text-align: center;
+         }
+         .center-btn{
+         	text-align: center;
+         }
+         h2{
+         	font-size: 32px!important;
+         }
+         h3{
+         	font-size: 25px!important;
+         }
+         p{
+         	font-size: 14px!important;
+         	line-height: 24px!important;
+         }
+         h4{
+         	font-size: 22px!important;
+         }
+         }
