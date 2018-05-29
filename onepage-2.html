@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Home | Page-1</title>
+      <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+      <link rel="stylesheet" type="text/css" href="https://cdn.aioneframework.com/assets/css/aione.min.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+      <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400">
+     <link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet">
+      <script type="text/javascript" src="https://cdn.aioneframework.com/assets/js/vendor.min.js"></script>
+      <script type="text/javascript" src="https://cdn.aioneframework.com/assets/js/aione.min.js"></script>
+      <style type="text/css">
+           #aione_menu li a{
+            font-size: 18px;
+            color: black;
+            font-family: 'Arima Madurai', cursive;
+            font-size: 30px;
+            line-height: 60px;
+           } 
+           .aione-scroll-to-top {
+              display: block;
+              position: fixed;
+              right: 10px;
+              bottom: 0;
+              z-index: 999;
+              background: #ff9800;
+              color: #ffffff;
+              line-height: 30px;
+              font-size: 30px;
+              width: 40px;
+              text-align: center;
+              border-radius: 6px 6px 0 0;
+            }
+             h1,h2,h3,h4{
+              font-family: 'Arima Madurai', cursive;
+             }
+             .aione-nav{
+              background-color: orange;
+              opacity: 0.6;
+            }
+            .aione-logo{
+              display: none;
+            }
+            .bounce{
+              right: 45%;
+              top: 10%;
+              font-weight: 700;
+              font-size: 60px;
+              color: #fff;
+              animation: bounce 6s infinite;
+            }
+            .owl-nav{
+              display: none;
+            }
+      </style>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          $('.click-icon').click(function(){
+            $('.aione-logo').fadeIn(300);
+          });
+           $('.hide-navigation').on('click',function(){
+            $('.aione-logo').fadeOut(300);
+          });
+          $('#aione_menu a').click(function(){
+            $('.aione-logo').fadeOut(300);
+          });
+          $('.bounce').click(function(){
+            $('#two').slidedown(200);
+          });
+           $(window).scroll(function(e){
+              if ($(this).scrollTop() >= 100)   {
+                  $('.aione-scroll-to-top').fadeIn();
+              }
+              else{
+                   $('.aione-scroll-to-top').fadeOut();
+              }
+            });
+        });
+
+      </script>
+   </head>
+   <body>
+      <div id="aione_wrapper" class="aione-wrapper page-home layout-header-top aione-layout-wide aione-theme-arcane">
+         <div class="wrapper">
+            <div id="aione_header" class="aione-header light ">
+              
+            </div>
+            <!--aione-header-->
+            <div id="aione_main" class="aione-main fullwidth p-0">
+               <div class="wrapper">
+                  <div id="aione_content" class="aione-content">
+                     <div class="wrapper">
+                        <div id="aione_page_content" class="aione-page-content m-0">
+                           <div class="wrapper">
+                              <section id="one">
+                                <div class="ar">
+                                  <div class="ac l100 position-relative p-0">
+                                    <img src="assets/images/bannerimage.jpg" height="600" width="100%" 
+                                    >
+                                  </div>
+                                  <div class="position-absolute" style="top: 5%;right: 0;">
+                                    <h2 class="white line-height-60 font-weight-100" style="font-family: 'Arima Madurai', cursive;">We are Mad N Creative. Digital Artists.<br>
+                                    Award Winning <span class="orange">Design Studio.</span></h2> 
+                                   </div>
+                                   <div class="position-absolute bounce" title="Scroll Down" href="#!" onclick="$('html,body').animate({scrollTop: '+=600px'} ,'slow')">
+                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                                   </div>
+                                   <div class="position-absolute click-icon" style="right: 20px;top: 10px;">
+                                      <i class="ion-navicon-round menu white font-size-45" aria-hidden="true"></i>
+                                   </div>
+                                    <!--<div class="position-absolute pt-7p" style="opacity: 0.6;background-color: #000;top: 6%;right: 0;left: 0;bottom: 10%;">
+                                  <h2 class="animate fadeInLeft white font-weight-800 p-20 aione-align-center" style="animation-name: fadeInLeft;border: 5px solid #fff;">SIMPLE . CLEAN . MODERN</h2> 
+                                  </div>--> 
+                                  </div>
+                              </section>
+                              <section>
+                                <div class="ar aione-logo position-fixed" style="background-color: orange;top: 0;right: 0;left: 0;bottom: 0;opacity: 0.9;z-index:20;height: 1000px;">
+                                <div class="ac l100 m50 s100 pt-10">
+                                  <nav id="aione_nav" class="aione-nav aione-align-right pr-50 pt-50 vertical" style="border-bottom: none;">
+                                    <ul id="aione_menu" class="aione-menu ">
+                                        <li class="aione-nav-item level0 white">
+                                            <a href="#one" ><span class=" pr-25 nav-item-text" data-hover="Home">Home</span></a>
+                                        </li>
+                                        <li class="aione-nav-item level0">
+                                            <a href="#two"><span class="pr-25 nav-item-text" data-hover="About">About</span></a>
+                                        </li>
+                                        <li class="aione-nav-item level0">
+                                            <a href="#three"><span class="pr-25 nav-item-text" data-hover="Who We Are">Who We Are</span></a>
+                                        </li>
+                                        <li class="aione-nav-item level0">
+                                            <a href="#four"><span class="pr-25 nav-item-text" data-hover="Why Choose Us">Why Choose Us</span></a>
+                                        </li>
+                                        <li class="aione-nav-item level0">
+                                            <a href="#five"><span class="pr-25 nav-item-text" data-hover="Service">Service</span></a>
+                                        </li>
+                                        <li class="aione-nav-item level0">
+                                            <a href="#six"><span class="pr-25 nav-item-text" data-hover="Latest Work">Latest Work</span></a>
+                                        </li>
+                                        <li class="aione-nav-item level0">
+                                            <a href="#seven"><span class="pr-25 nav-item-text" data-hover="Contact">Contact</span></a>
+                                        </li>
+                                    </ul>
+                                  </nav>
+                                </div>
+                                 <div class="position-absolute hide-navigation" style="right: 9%;top: 10px;">
+                                      <i class="fa fa-times menu white font-size-45" aria-hidden="true"></i>
+                                  </div>
+                               </div>
+                              </section>
+                              <section id="two">
+                                <div class="ar p-5p">
+                                  <div class="about aione-align-center pb-50">
+                                    <h2 class="font-weight-700 grey darken-4">ABOUT US</h2>
+                                  </div>
+                                  <div class="ac l50 m50 s100">
+                                    <div class="aione-align-center">
+                                      <img src="assets/images/team1.png">
+                                    </div>
+                                  </div>
+                                  <div class="ac l50 m50 s100">
+                                    <div class="ph-20">
+                                      <h3 class="aione-align-center grey darken-4">We are <span class="orange">Mad N Creative</span></h3>
+                                      <p class="aione-align-justify font-size-18 grey darken-4 line-height-30
+                                      "> Pellentesque vitae augue mollis, blandit ipsum vitae, aliquam tellus. Morbi bibendum, magna tincidunt porta dapibus, velit tellus scelerisque dolor, cursus sodales felis lectus vitae leo. Quisque id tortor ut tortor aliquam tristique. Curabitur at ex eget nulla aliquam ultrices. Suspendisse non leo mi. Aenean id hendrerit risus.Sed congue ac eros vitae luctus. Vestibulum orci justo, rutrum et venenatis eu. </p>
+                                      <div class="aione-align-center">
+                                        <button class="bg-orange mt-20 ">Know More</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                 </div>
+                              </section>
+                              <section id="three">
+                                <div class="ar p-7p" style="background-color: #ff9808;">
+                                  <div class="ac l33 m50 s100">
+                                    <div class="black">
+                                      <h3 class="black">Lipsum</h3>
+                                      <p class="line-height-25 font-size-18"> Pellentesque vitae augue mollis, blandit ipsum vitae, aliquam tellus. Morbi bibendum, magna tincidunt porta dapibus, velit tellus scelerisque dolor, cursus sodales felis lectus vitae leo.</p>
+                                    </div>
+                                  </div>
+                                  <div class="ac l33 m50 s100">
+                                    <div class="black">
+                                      <h3 class="black">Lipsum</h3>
+                                      <p class="line-height-25 font-size-18"> Pellentesque vitae augue mollis, blandit ipsum vitae, aliquam tellus. Morbi bibendum, magna tincidunt porta dapibus, velit tellus scelerisque dolor, cursus sodales felis lectus vitae leo.</p>
+                                    </div>
+                                  </div>
+                                  <div class="ac l33 m50 s100">
+                                    <div class="black">
+                                      <h3 class="black">Lipsum</h3>
+                                      <p class="line-height-25 font-size-18"> Pellentesque vitae augue mollis, blandit ipsum vitae, aliquam tellus. Morbi bibendum, magna tincidunt porta dapibus, velit tellus scelerisque dolor, cursus sodales felis lectus vitae leo.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </section>
+                              <section id="four">
+                                <div class="ar pb-5p">
+                                  <div class="ac l30 m50 s100 p-0" style="background-image: url('assets/images/whychooseusimg.jpg');background-attachment: fixed;height: 800px;"> 
+                                  </div>
+                                  <div class="ac l70 m50 s100 ph-10p pv-12p">
+                                    <div class="about">
+                                      <h2 class="font-weight-500 grey darken-4">Why<span class="orange"> Choose</span>  Us</h2>
+                                    </div>
+                                    <div class="ar">
+                                      <div class="ac l50 m50 s100 p-20">
+                                        <div class="mb-20">
+                                        <h4 class="font-weight-400 blue-grey darken-4">Target Audience</h4>
+                                        <p class="font-size-16 line-height-26 blue-grey darken-2 font-weight-300">We then optimize your online presence and website to lead them.</p>
+                                        </div>
+                                        <div class="mb-20">
+                                        <h4 class="font-weight-400 blue-grey darken-4">Creative Process</h4>
+                                        <p class="font-size-16 line-height-26 blue-grey darken-2 font-weight-300">At the heart of every SEO campaign are the goals of our clients.</p>
+                                      </div>
+                                      </div>
+                                      <div class="ac l50 m50 s100 p-20">
+                                        <div class="mb-20">
+                                          <h4 class="font-weight-400 blue-grey darken-4">Results Guaranteed</h4>
+                                          <p class="font-size-16 line-height-26 blue-grey darken-2 font-weight-300">GOSEO services are backed by an increase in keyword rankings.</p>
+                                        </div>
+                                        <div class="mb-20">
+                                          <h4 class="font-weight-400 blue-grey darken-4">Personalized Care</h4>
+                                          <p class="font-size-16 line-height-26 blue-grey darken-2 font-weight-300">Outstanding client care begins with direct communication.</p>
+                                        </div>
+                                        </div>
+                                      </div>
+                                      <div class="aione-align-center">
+                                        <button class="bg-orange mt-20 ">View Detail</button>
+                                      </div>
+                                  </div>
+                                  </div>
+                              </section>
+                              <!-- Amazing Features -->
+                              <section id="five" style="background-color: #f5f5f5;">
+                                <div class="ar p-4p">
+                                  <div class="ac l33 m50 s100">
+                                    <div class="">
+                                      <h1 class="grey darken-4 line-height-70 font-weight-500">Our <br><span class="orange aione-border-bottom border-orange border-width-3">Services</span></h1>
+                                    </div>
+                                  </div>
+                                  <div class="ac l33 m50 s100">
+                                    <div class="">
+                                      <i class="fa fa-mobile font-size-120 orange"></i>
+                                      <h4 class="font-weight-400 blue-grey darken-4 pt-10">User Experience Designing</h4>
+                                      <p class="font-size-16 line-height-26 blue-grey darken-2 font-weight-300">Outstanding client care begins with direct communication.</p>
+                                    </div>
+                                  </div>
+                                  <div class="ac l33 m50 s100">
+                                    <div class="">
+                                      <i class="fa fa-heart font-size-90 orange"></i>
+                                      <h4 class="font-weight-400 blue-grey darken-4 pt-30">IoT and Mobile Designing</h4>
+                                      <p class="font-size-16 line-height-26 blue-grey darken-2 font-weight-300">Outstanding client care begins with direct communication.</p>
+                                    </div>
+                                  </div>
+                                  <div class="clear"></div>
+                                  <div class="ac l33 m50 s100 mt-6p">
+                                    <div class="">
+                                      <i class="fa fa-bar-chart font-size-90 orange"></i>
+                                      <h4 class="font-weight-400 blue-grey darken-4 pt-30">Branding & Strategy</h4>
+                                      <p class="font-size-16 line-height-26 blue-grey darken-2 font-weight-300">Outstanding client care begins with direct communication.</p>
+                                    </div>
+                                  </div>
+                                  <div class="ac l33 m50 s100 mt-6p">
+                                    <div class="">
+                                      <i class="fa fa-file-text font-size-90 orange"></i>
+                                      <h4 class="font-weight-400 blue-grey darken-4 pt-30">Digital Marketing</h4>
+                                      <p class="font-size-16 line-height-26 blue-grey darken-2 font-weight-300">Outstanding client care begins with direct communication.</p>
+                                    </div>
+                                  </div>
+                                  <div class="ac l33 m50 s100 mt-6p">
+                                    <div class="">
+                                      <i class="fa fa-heart font-size-90 orange"></i>
+                                      <h4 class="font-weight-400 blue-grey darken-4 pt-30">Responsive Web-Designing</h4>
+                                      <p class="font-size-16 line-height-26 blue-grey darken-2 font-weight-300">Outstanding client care begins with direct communication.</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </section>
+                              <!-- Apps Screenshot -->
+                              <section id="six" style="">
+                                <div class="ar ph-5p pv-50">
+                                  <h2 class="font-weight-500 grey darken-4">Our<span class="orange"> Latest</span>  Work</h2>
+                                    <div class="ac l100 m100 s100">
+                                       <div class="aione-carousel owl-carousel owl-theme gallery aione-theme owl-loaded owl-drag">
+                                          <div class="p-20">
+                                             <div class="ar pv-30 ph-10">
+                                                <div class="ac l100">
+                                                    <div class="center-align">
+                                                      <img class="" src="assets/images/prime.jpg">
+                                                    </div>
+                                                    <div class="center-align mt-15">
+                                                    </div>
+                                                </div>
+                                                <div class="clear"></div>
+                                                <div class="mt-10 ph-20">
+                                                  <h3><a href="#" class="grey darken-4">Migrane Exibitions</a></h3>
+                                                  <p class="font-size-18 line-height-23  font-weight-500 aione-align-justify">Designer</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="p-20">
+                                            <div class="ar pv-30 ph-10">
+                                                <div class="ac l100">
+                                                    <div class="center-align">
+                                                      <img class="" src="assets/images/prime.jpg">
+                                                    </div>
+                                                    <div class="center-align mt-15">
+                                                    </div>
+                                                </div>
+                                                <div class="clear"></div>
+                                                <div class="mt-10 ph-20">
+                                                  <h3><a href="#" class="grey darken-4">Migrane Exibitions</a></h3>
+                                                  <p class="font-size-18 line-height-23  font-weight-500 aione-align-justify">Designer</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="p-20">
+                                            <div class="ar pv-30 ph-10">
+                                                <div class="ac l100">
+                                                    <div class="center-align">
+                                                      <img class="" src="assets/images/prime.jpg">
+                                                    </div>
+                                                    <div class="center-align mt-15">
+                                                    </div>
+                                                </div>
+                                                <div class="clear"></div>
+                                                <div class="mt-10 ph-20">
+                                                  <h3><a href="#" class="grey darken-4">Migrane Exibitions</a></h3>
+                                                  <p class="font-size-18 line-height-23  font-weight-500 aione-align-justify">Designer</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                          <div class="p-20">
+                                            <div class="ar pv-30 ph-10">
+                                                <div class="ac l100">
+                                                    <div class="center-align">
+                                                      <img class="" src="assets/images/prime.jpg">
+                                                    </div>
+                                                    <div class="center-align mt-15">
+                                                    </div>
+                                                </div>
+                                                <div class="clear"></div>
+                                                <div class="mt-10 ph-20">
+                                                  <h3><a href="#" class="grey darken-4">Migrane Exibitions</a></h3>
+                                                  <p class="font-size-18 line-height-23  font-weight-500 aione-align-justify">Designer</p>
+                                                </div>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </section>
+                              <!-- Innovative Team -->
+                              <section id="seven" style="background-image: url('assets/images/callussection.jpg');background-size: cover;background-position: center;background-repeat: no-repeat;">
+                                <div class="ar">
+                                  <div class="ac l100 p-10p aione-align-center">
+                                    <h3 class="white">Let's discuss your <span class="orange">IDEA</span> and convert it into <span class="orange">REALITY</span></h3>
+                                    <h4 class="white ">Contact at:</h4>
+                                    <h3 class="white ">+91-9555 666 495</h3>
+                                  </div>
+                                </div>
+                              </section>
+                              <section>
+                                
+                              </section>
+                              <!-- Pricing -->
+                              <section>
+                              </section>
+                              <!-- Latest Blog -->
+                              <section id="latestblog">
+                              </section>
+                              <section>
+                              	<div class="ar">
+                              		  <div class="aione-scroll-to-top">
+	                            	    <a href="#one"><i class="fa fa-angle-up white"></i></a>
+                              		  </div>	
+	                                </div>
+                              </section>
+                             
+                           </div>
+                        </div>
+                        <!--aione-page-content-->
+                     </div>
+                     <!--wrapper-->
+                  </div>
+                  <!--aione_content-->
+               </div>
+               <!--wrapper-->
+            </div>
+            <!--aione-main-->
+            <div id="aione_footer" class="aione-footer dark load-template m-0">
+            </div>
+            <!-- .aione-footer -->
+            <div id="aione_copyright" class="aione-copyright dark load-template">
+            </div>
+            <!-- .aione-copyright -->
+         </div>
+         <!--wrapper-->
+      </div>
+   </body>
+</html>
+
+http://preview.themeforest.net/item/flibz-one-page-parallax-html5-template/full_screen_preview/10687955
