@@ -7,6 +7,7 @@
       <link rel="canonical" href="index.html">
       <link rel="icon" type="image/png" href="https://cdn.aioneframework.com/assets/images/favicon-32x32.png" sizes="32x32" />
       <link rel="stylesheet" href="https://cdn.aioneframework.com/assets/css/aione.min.css">
+
    </head>
    <body>
         <div id="aione_wrapper" class="aione-wrapper page-home layout-header-top aione-layout-wide aione-theme-arcane">
@@ -25,7 +26,7 @@
                                 </a>
                             </div>
                             <div class="toggle">
-                                <i class="fa fa-bars menu font-size-30 deep-purple darken-2">
+                                <i class="ion-ios-menu menu font-size-30 deep-purple darken-2">
                                 </i>
                             </div>
                             <ul id="aione_menu" class="aione-menu">
@@ -1009,8 +1010,19 @@
             <!--wrapper-->
         </div>
         <a href=#aione_wrapper class="scrolltop bg-deep-purple bg-darken-2"></a>
-
       <script src="https://cdn.aioneframework.com/assets/js/vendor.min.js"></script>
-      <script src="https://cdn.aioneframework.com/assets/js/aione.min.js"></script>     
+      <script src="https://cdn.aioneframework.com/assets/js/aione.min.js"></script>
+      <script type="text/javascript">
+          $(document).ready(function(){
+              $('.menu').click(function(){
+               $('.aione-menu').toggleClass('active');
+            });
+              $('.aione-menu .aione-nav-item a').click(function(){
+              $('.aione-menu').removeClass('active');
+              });
+
+            });
+      </script>
+           
    </body>
 </html>
